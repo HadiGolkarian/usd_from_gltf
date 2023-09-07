@@ -211,7 +211,7 @@ class PngDep(Dep):
 
   def install(self):
     """Installs libpng dependency."""
-    url = 'https://storage.googleapis.com/local-dev-david/chert/giflib-5.1.9.tar.gz'
+    url = 'https://download.sourceforge.net/libpng/libpng-1.6.37.tar.gz'
     path = os.path.join(cfg.src_dir, 'png.zip')
     force = self.forced()
     dl_dir = download_archive(url, path, force)
