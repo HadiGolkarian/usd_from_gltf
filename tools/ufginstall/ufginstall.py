@@ -211,7 +211,7 @@ class PngDep(Dep):
 
   def install(self):
     """Installs libpng dependency."""
-    url = 'https://ftp.osuosl.org/pub/blfs/9.0/l/libpng-1.6.37.tar.xz'
+    url = 'https://storage.googleapis.com/local-dev-david/chert/libpng-1.6.37.tar.gz'
     path = os.path.join(cfg.src_dir, 'png.zip')
     force = self.forced()
     dl_dir = download_archive(url, path, force)
@@ -262,7 +262,7 @@ class TclapDep(Dep):
 
   def install(self):
     """Installs TCLAP dependency."""
-    url = 'https://sourceforge.net/projects/tclap/files/tclap-1.2.2.tar.gz/download'
+    url = 'https://storage.googleapis.com/local-dev-david/chert/tclap-1.2.2.tar.gz'
     patch_paths = ['tclap/CMakeLists.txt', 'tclap/tclap-config.cmake']
     path = os.path.join(cfg.src_dir, 'tclap.tar.gz')
     force = self.forced()
