@@ -211,7 +211,7 @@ class PngDep(Dep):
 
   def install(self):
     """Installs libpng dependency."""
-    url = 'https://download.sourceforge.net/libpng/libpng-1.6.37.tar.gz'
+    url = 'https://ftp.osuosl.org/pub/blfs/9.0/l/libpng-1.6.37.tar.xz'
     path = os.path.join(cfg.src_dir, 'png.zip')
     force = self.forced()
     dl_dir = download_archive(url, path, force)
